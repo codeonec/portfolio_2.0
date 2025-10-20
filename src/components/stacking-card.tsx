@@ -109,7 +109,7 @@ const Component = forwardRef<HTMLElement, ComponentRootProps>(({ projects }, ref
 
   return (
     <ReactLenis root>
-      <main className='bg-black' ref={container}>
+      <main ref={container}>
 
         <section className='w-full'>
           {projects.map((project, i) => {
