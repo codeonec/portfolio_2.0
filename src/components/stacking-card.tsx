@@ -53,7 +53,7 @@ export const Card = ({
         }}
         className={`flex flex-col relative -top-[25%] h-[450px] w-[70%] rounded-md p-10 origin-top`}
       >
-        <h3 className='text-center'>{title}</h3>
+        <h3 className='text-center text-4xl'>{title}</h3>
         <div className={`flex h-full mt-5 gap-10`}>
           <div className={`w-[40%] relative top-[10%]`}>
             <p className='text-sm'>{description}</p>
@@ -111,7 +111,7 @@ const Component = forwardRef<HTMLElement, ComponentRootProps>(({ projects }, ref
     <ReactLenis root>
       <main className='bg-black' ref={container}>
 
-        <section className='text-white w-full bg-slate-950'>
+        <section className='w-full'>
           {projects.map((project, i) => {
             const targetScale = 1 - (projects.length - i) * 0.05;
             return (

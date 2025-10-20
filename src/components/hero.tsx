@@ -24,7 +24,7 @@ const Hero: React.FC = () => (
     </div>
     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4">
       <h1 className="text-8xl mb-6 text-center uppercase">
-        Hello, I'm Ritul
+        Hello, I'm <span className="underline decoration-4 underline-offset-8 decoration-[#7868E5]">Ritul</span>
       </h1>
       <h2 className="text-2xl mb-4 text-center">
         Website and UI & Designer

@@ -2,7 +2,7 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-16 max-w-6xl mx-auto py-40">
+    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 max-w-6xl mx-auto py-40">
       {/* Left Column */}
       <div className="md:w-1/2 w-full">
         <h2 className="mb-4">
@@ -16,11 +16,11 @@ const About: React.FC = () => {
         </p>
       </div>
       {/* Right Column */}
-      <div className="md:w-1/2 w-full flex justify-center">
+      <div className="md:w-1/2 w-full h-full mx-4 flex justify-center">
         <img
-          src="/vite.svg"
+          src="/images/about.png"
           alt="Profile"
-          className="rounded-lg shadow-lg w-64 h-64 object-cover"
+          className="object-cover"
         />
       </div>
     </div>
