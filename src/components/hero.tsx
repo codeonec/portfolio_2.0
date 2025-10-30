@@ -3,7 +3,7 @@ import LiquidEther from "./LiquidEther";
 
 const Hero: React.FC = () => (
   <section className="flex flex-col items-center justify-center relative">
-    <div style={{ width: "100%", height: 600, position: "relative" }}>
+    <div style={{ width: "100%", height: 700, position: "relative" }}>
       <LiquidEther
         colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
         mouseForce={20}
