@@ -1,4 +1,4 @@
-import Button, { LinkButton } from "./button";
+import { LinkButton } from "./button";
 
 const navLinks = [
     { name: 'Home', href: '/' },
