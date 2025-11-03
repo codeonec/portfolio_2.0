@@ -29,7 +29,7 @@ const projects = [
     title: "Prodco",
     description:
       "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal.",
-    link: "https://images.unsplash.com/photo-1605106901227-991bd663255c?w=500&auto=format&fit=crop",
+    link: "/images/prodco.png",
     color: "linear-gradient(to right, #141e30, #243b55)",
     liveLink: "https://codeonec.netlify.app/prodco/index.html",
   },

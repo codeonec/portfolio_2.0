@@ -1,4 +1,4 @@
-import Button from "./button";
+import Button, { LinkButton } from "./button";
 
 const navLinks = [
     { name: 'Home', href: '/' },
@@ -22,7 +22,7 @@ export default function Navigation() {
                         {link.name}
                     </a>
                 ))}
-                <Button className="text-zinc-900">Resume</Button>
+                <LinkButton href="https://rxresu.me/codeonec/ritul-patel-resume" target="_blank" className="text-zinc-900">Resume</LinkButton>
             </div>
         </nav>
     );

@@ -22,14 +22,14 @@ const Hero: React.FC = () => (
         autoRampDuration={0.6}
       />
     </div>
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 px-4">
+    <div className="absolute top-1/2 transform -translate-y-1/2 px-4">
       <h1 className="text-8xl mb-6 text-center uppercase">
-        Hello, I'm <span className="underline decoration-4 underline-offset-8 decoration-[#7868E5]">Ritul</span>
+        Hello <span className="inline-block"><img src="/images/hand_wave.gif" alt="hello" className="h-20"/></span>, I'm <span className="underline decoration-4 underline-offset-8 decoration-[#7868E5]">Ritul</span>
       </h1>
       <h2 className="text-2xl mb-4 text-center">
         Website and UI & Designer
       </h2>
-      <p className="text-lg max-w-xl text-center text-gray-400">
+      <p className="text-lg max-w-xl mx-auto text-center text-gray-400">
         I'm a designer and developer based in Canada who creates digital
         experiences and interfaces.
       </p>
