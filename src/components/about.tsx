@@ -2,7 +2,7 @@ import React from "react";
 
 const About: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 max-w-6xl mx-auto py-40 px-4">
+    <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 max-w-6xl mx-auto py-40 px-4" id="about">
       {/* Left Column */}
       <div className="md:w-1/2 w-full">
         <h2 className="mb-4">

@@ -37,7 +37,7 @@ const projects = [
 
 export default function Work() {
   return (
-    <div>
+    <div id="work">
       <h2 className="text-center">Work</h2>
       <Component projects={projects} />
     </div>

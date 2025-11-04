@@ -1,7 +1,7 @@
 import About from "./components/about";
 import Footer from "./components/footer";
 import Hero from "./components/hero";
-import Navigation from "./components/navigation";
+import { Navbar } from "./components/navigation";
 import Timeline from "./components/timeline";
 import Work from "./components/work";
 
@@ -15,7 +15,7 @@ import Work from "./components/work";
 function App() {
   return (
     <>
-      <Navigation />
+      <Navbar />
       <Hero />
       <About />
       <Timeline />

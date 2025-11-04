@@ -1,10 +1,10 @@
-import { Github, Linkedin, MoveUpRight, Twitter } from "lucide-react";
+import { Dribbble, Github, Linkedin, MoveUpRight, Twitter } from "lucide-react";
 import React from "react";
 import { LinkButton } from "./button";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="mt-12">
+    <footer className="mt-12" id="contact">
       <div className="max-w-6xl mx-auto px-6 py-8">
         {/* Upper row: two columns */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-8 pb-6 border-b border-gray-800">
@@ -37,33 +37,55 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex items-center space-x-2 mt-5">
               <a
-                href="https://github.com/your-username"
+                href="https://github.com/codeonec"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-gray-300 bg-zinc-900 p-3 rounded-full"
+                className="text-gray-400 hover:text-gray-300 transition-colors duration-200 bg-zinc-900 p-3 rounded-full"
                 aria-label="GitHub"
               >
                 <Github strokeWidth={1.5} height={20} width={20} />
               </a>
-
               <a
-                href="https://twitter.com/your-username"
+                href="https://www.linkedin.com/in/ritulspatel/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-gray-300 bg-zinc-900 p-3 rounded-full"
-                aria-label="Twitter"
-              >
-                <Twitter strokeWidth={1.5} height={20} width={20} />
-              </a>
-
-              <a
-                href="https://linkedin.com/in/your-username"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-gray-300 bg-zinc-900 p-3 rounded-full"
+                className="text-gray-400 hover:text-gray-300 bg-zinc-900 transition-colors duration-200 p-3 rounded-full"
                 aria-label="LinkedIn"
               >
                 <Linkedin strokeWidth={1.5} height={20} width={20} />
+              </a>
+              <a
+                href="https://dribbble.com/codeonec"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-gray-300 bg-zinc-900 transition-colors duration-200 p-3 rounded-full"
+                aria-label="LinkedIn"
+              >
+                <Dribbble strokeWidth={1.5} height={20} width={20} />
+              </a>
+              <a
+                href="https://x.com/ritulspatel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-zinc-900 p-3 rounded-full"
+                aria-label="Twitter"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 21L10.548 13.452M10.548 13.452L3 3H8L13.452 10.548M10.548 13.452L16 21H21L13.452 10.548M21 3L13.452 10.548"
+                    stroke="black"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="stroke-gray-400 group-hover:stroke-gray-300 transition-colors duration-200"
+                  />
+                </svg>
               </a>
             </div>
           </div>

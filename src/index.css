@@ -20,6 +20,9 @@
   }
 }
 
+html{
+  scroll-behavior: smooth;
+}
 body {
   @apply bg-zinc-950 text-typ-white font-jakarta;
   font-family: "Plus Jakarta Sans", sans-serif;
