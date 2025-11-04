@@ -3,7 +3,7 @@ import LiquidEther from "./LiquidEther";
 
 const Hero: React.FC = () => (
   <section className="flex flex-col items-center justify-center relative">
-    <div style={{ width: "100%", height: 700, position: "relative" }}>
+    <div style={{ width: "100%", height: "100vh", position: "relative" }}>
       <LiquidEther
         colors={["#5227FF", "#FF9FFC", "#B19EEF"]}
         mouseForce={20}
@@ -22,7 +22,7 @@ const Hero: React.FC = () => (
         autoRampDuration={0.6}
       />
     </div>
-    <div className="absolute top-1/2 transform -translate-y-1/2 px-4">
+    <div className="absolute top-1/2 transform -translate-y-1/2 px-4 mt-6">
       <h1 className="text-8xl mb-6 text-center uppercase">
         Hello <span className="inline-block"><img src="/images/hand_wave.gif" alt="hello" className="h-20"/></span>, I'm <span className="underline decoration-4 underline-offset-8 decoration-[#7868E5]">Ritul</span>
       </h1>

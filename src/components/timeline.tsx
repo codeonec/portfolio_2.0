@@ -47,7 +47,7 @@ const Timeline: React.FC = () => (
             <span className="size-4 shrink-0 rounded-full bg-[#7868E5]"></span>
             <div className="-mt-2">
               <div className="flex items-center gap-4">
-                <img src={exp.image} className="h-6" alt={exp.company}/>
+                <img src={exp.image} className="h-6 shadow-gray-50" alt={exp.company}/>
                 <h3>{exp.company}</h3>
               </div>
               <div className="text-xl my-2">{exp.jobTitle}</div>
