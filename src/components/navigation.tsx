@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 
-
 const AnimatedNavLink = ({
   href,
   children,
@@ -54,14 +53,7 @@ export function Navbar() {
     };
   }, [isOpen]);
 
-  const logoElement = (
-    <div className="relative w-5 h-5 flex items-center justify-center">
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-gray-200 top-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-gray-200 left-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-gray-200 right-0 top-1/2 transform -translate-y-1/2 opacity-80"></span>
-      <span className="absolute w-1.5 h-1.5 rounded-full bg-gray-200 bottom-0 left-1/2 transform -translate-x-1/2 opacity-80"></span>
-    </div>
-  );
+  const logoElement = <img src="/images/RSP.png" className="h-4" alt="rsp" />;
 
   const navLinksData = [
     { label: "Home", href: "#hero" },
@@ -70,9 +62,12 @@ export function Navbar() {
   ];
 
   const outlineButtonElement = (
-    <button className="px-4 py-2 sm:px-3 text-xs sm:text-sm border border-[#333] bg-[rgba(31,31,31,0.62)] text-gray-300 rounded-full hover:border-white/50 hover:text-white transition-colors duration-200 w-full sm:w-auto">
+    <a
+      className="px-4 py-2 sm:px-3 text-xs sm:text-sm border border-[#333] bg-[rgba(31,31,31,0.62)] text-gray-300 rounded-full hover:border-white/50 hover:text-white transition-colors duration-200 w-full sm:w-auto"
+      href="#footer"
+    >
       Contact
-    </button>
+    </a>
   );
 
   const solidButtonElement = (
@@ -85,24 +80,23 @@ export function Navbar() {
                      transition-all duration-300 ease-out
                      group-hover:opacity-60 group-hover:blur-xl group-hover:-m-3"
       ></div>
-      <button className="relative z-10 px-4 py-2 sm:px-3 text-xs sm:text-sm font-semibold text-black bg-gradient-to-br from-gray-100 to-gray-300 rounded-full hover:from-gray-200 hover:to-gray-400 transition-all duration-200 w-full sm:w-auto">
+      <a
+        className="relative z-10 px-4 py-2 sm:px-3 text-xs sm:text-sm font-semibold text-black bg-gradient-to-br from-gray-100 to-gray-300 rounded-full hover:from-gray-200 hover:to-gray-400 transition-all duration-200 w-full sm:w-auto"
+        href="https://rxresu.me/codeonec/ritul-patel-resume"
+        target="_blank"
+      >
         Resume
-      </button>
+      </a>
     </div>
   );
 
   return (
     <header
-      className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-20
-                       flex flex-col items-center
-                       pl-6 pr-6 py-3 backdrop-blur-sm
-                       ${headerShapeClass}
-                       border border-[#333] bg-[#1f1f1f57]
-                       w-[calc(100%-2rem)] sm:w-auto
-                       transition-[border-radius] duration-0 ease-in-out`}
+      className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center pl-6 pr-6 py-3 backdrop-blur-sm
+        ${headerShapeClass} border border-[#333] bg-[#1f1f1f57] sm:w-max w-[calc(100%-2rem)] transition-[border-radius] duration-0 ease-in-out`}
     >
       <div className="flex items-center justify-between w-full gap-x-6 sm:gap-x-8">
-        <div className="flex items-center">{logoElement}</div>
+        <div className="flex items-center shrink-0">{logoElement}</div>
 
         <nav className="hidden sm:flex items-center space-x-4 sm:space-x-6 text-sm">
           {navLinksData.map((link) => (
@@ -183,5 +177,3 @@ export function Navbar() {
     </header>
   );
 }
-
-
