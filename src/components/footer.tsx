@@ -97,14 +97,14 @@ const Footer: React.FC = () => {
             © {new Date().getFullYear()} Copyright & all...
           </div>
           <div className="inline-flex space-x-4 text-sm">
-            <a href="/about" className="text-gray-400 hover:text-gray-300">
+            <a href="#about" className="text-gray-400 hover:text-gray-300">
               About
             </a>
-            <a href="/work" className="text-gray-400 hover:text-gray-300">
+            <a href="#work" className="text-gray-400 hover:text-gray-300">
               Work
             </a>
-            <a href="/contact" className="text-gray-400 hover:text-gray-300">
-              Contact
+            <a href="#hero" className="text-gray-400 hover:text-gray-300">
+              Top
             </a>
           </div>
         </div>

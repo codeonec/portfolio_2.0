@@ -7,7 +7,7 @@ import Work from "./components/work";
 
 // TODOs:
 // 1. Animate about poster
-// 2. Add timeline glow on scroll
+// ALMOST DONE - 2. Add timeline glow on scroll
 // 3. Create what I work with section
 // 4. Add design showcase
 // 5. Integrate analytics

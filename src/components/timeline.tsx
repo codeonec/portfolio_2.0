@@ -49,19 +49,21 @@ const Timeline: React.FC = () => {
       {/* Right Column: Timeline */}
       <div className="md:w-1/2 relative pt-5">
         <ol className="relative before:absolute before:ml-[7.5px] md:before:-ml-px before:h-full before:w-[1px] before:rounded-full before:bg-gray-500">
-          <div className="rotate-90 absolute top-0 -left-[.5px] right-0 w-full h-[2px] origin-left px-3 overflow-hidden">
+          <div className="absolute left-[7px] md:-left-[1px] top-0 w-[2px] h-full">
             <motion.div
               id="scroll-indicator"
               style={{
-                scaleX: scrollYProgress,
-                height: 10,
-                position: "fixed",
+                scaleY: scrollYProgress,
+                height: '100%',
+                width: "1.5px",
+                position: "absolute",
                 top: 0,
                 left: 0,
                 right: 0,
-                originX: 0,
-                transform: "rotate(90deg)",
+                originY: 0,
                 backgroundColor: "#fff6e8",
+                boxShadow: "0 0 8px #fff6e8",
+                background: "linear-gradient(359deg,rgba(255, 246, 232, 1) 0%, rgba(255, 246, 232, 0) 100%)",
               }}
             />
           </div>
