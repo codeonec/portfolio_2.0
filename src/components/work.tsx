@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Stact",
     description:
-      "The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold; an ongoing project investigating how humans interact with and disrupt the Danish coast.",
+      "Stact is a ReactJS-based multi-purpose front-end template. It has over 15 pages with a mobile-friendly UI that is simple, clean, and easy to navigate.",
     link: "/images/stact.png",
     color: "linear-gradient(to right, #0f2027, #203a43, #2c5364)",
     liveLink: "https://stact.vercel.app/",
@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Masterpiece",
     description:
-      "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément.",
+      "Bootstrap-based static Front End template designed for enterprises, startups, and digital agencies. Available exclusively on Themeforest with 50+ sales.",
     link: "/images/masterpiece.png",
     color: "linear-gradient(to right, #403a3e, #be5869)",
     liveLink: "https://codeonec.netlify.app/masterpiece/index.html",
@@ -28,7 +28,7 @@ const projects = [
   {
     title: "Prodco",
     description:
-      "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal.",
+      "ProdCo is a product landing page template with two dark and light mode designs. Sold more than 30 times on Themeforest.",
     link: "/images/prodco.png",
     color: "linear-gradient(to right, #141e30, #243b55)",
     liveLink: "https://codeonec.netlify.app/prodco/index.html",
@@ -38,7 +38,7 @@ const projects = [
 export default function Work() {
   return (
     <div id="work">
-      <h2 className="text-center">Work</h2>
+      <h2 className="text-center">Selected Work</h2>
       <Component projects={projects} />
     </div>
   );
