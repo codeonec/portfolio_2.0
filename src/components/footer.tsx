@@ -1,6 +1,5 @@
-import { Dribbble, Github, Linkedin, MoveUpRight, Twitter } from "lucide-react";
+import { Dribbble, Github, Linkedin, MoveUpRight } from "lucide-react";
 import React from "react";
-import { LinkButton } from "./button";
 
 const Footer: React.FC = () => {
   return (

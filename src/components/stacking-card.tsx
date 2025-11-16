@@ -100,7 +100,7 @@ interface ComponentRootProps {
 }
 
 const Component = forwardRef<HTMLElement, ComponentRootProps>(
-  ({ projects }, ref) => {
+  ({ projects }) => {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
       target: container,
