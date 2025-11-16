@@ -26,21 +26,20 @@ const Footer: React.FC = () => {
           {/* Right column: vertical contact actions (Email, Resume) */}
           <div className="">
             <div className="flex flex-col space-y-2 text-sm">
-              <LinkButton
+              <a
+                className="relative z-10 px-4 py-2 text-center  sm:px-3 text-xs sm:text-sm font-semibold text-black bg-gradient-to-br from-gray-100 to-gray-300 rounded-full hover:from-gray-200 hover:to-gray-400 transition-all duration-200 w-full sm:w-auto"
                 href="https://rxresu.me/codeonec/ritul-patel-resume"
                 target="_blank"
-                rel="noopener noreferrer"
-                className="text-center"
               >
                 Resume
-              </LinkButton>
+              </a>
             </div>
             <div className="flex items-center space-x-2 mt-5">
               <a
                 href="https://github.com/codeonec"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-gray-300 transition-colors duration-200 bg-zinc-900 p-3 rounded-full"
+                className="text-gray-400 hover:text-gray-300 border border-[#333] hover:border-white/50 transition-colors duration-200 bg-zinc-900 p-3 rounded-full"
                 aria-label="GitHub"
               >
                 <Github strokeWidth={1.5} height={20} width={20} />
@@ -49,7 +48,7 @@ const Footer: React.FC = () => {
                 href="https://www.linkedin.com/in/ritulspatel/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-gray-300 bg-zinc-900 transition-colors duration-200 p-3 rounded-full"
+                className="text-gray-400 hover:text-gray-300 border border-[#333] hover:border-white/50 bg-zinc-900 transition-colors duration-200 p-3 rounded-full"
                 aria-label="LinkedIn"
               >
                 <Linkedin strokeWidth={1.5} height={20} width={20} />
@@ -58,7 +57,7 @@ const Footer: React.FC = () => {
                 href="https://dribbble.com/codeonec"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-gray-300 bg-zinc-900 transition-colors duration-200 p-3 rounded-full"
+                className="text-gray-400 hover:text-gray-300 border border-[#333] hover:border-white/50 bg-zinc-900 transition-colors duration-200 p-3 rounded-full"
                 aria-label="LinkedIn"
               >
                 <Dribbble strokeWidth={1.5} height={20} width={20} />
@@ -67,7 +66,7 @@ const Footer: React.FC = () => {
                 href="https://x.com/ritulspatel"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group bg-zinc-900 p-3 rounded-full"
+                className="group bg-zinc-900 p-3 border border-[#333] hover:border-white/50 rounded-full"
                 aria-label="Twitter"
               >
                 <svg
