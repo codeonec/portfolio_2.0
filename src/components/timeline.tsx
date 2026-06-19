@@ -1,14 +1,44 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { motion, useScroll } from "motion/react";
+import { FileCog } from "lucide-react";
 
 type Experience = {
   jobTitle: string;
   company: string;
   duration: string;
-  image: string;
+  image?: string;
+  link?: string;
+};
+
+type CompanyVisualProps = {
+  image?: string;
+  company: string;
+};
+
+const CompanyVisual: React.FC<CompanyVisualProps> = ({ image, company }) => {
+  const [imageFailed, setImageFailed] = useState(false);
+
+  if (!image || imageFailed) {
+    return <FileCog className="h-6 w-6 text-gray-300" aria-label={`${company} icon`} />;
+  }
+
+  return (
+    <img
+      src={image}
+      className="h-6 shadow-gray-50"
+      alt={company}
+      onError={() => setImageFailed(true)}
+    />
+  );
 };
 
 const experiences: Experience[] = [
+  {
+    jobTitle: "Independent Software Engineer",
+    company: "Prowbot - AI Personal Finance App",
+    duration: "Nov 2024 - Present",
+    link: "https://github.com/codeonec/prowbot",
+  },
   {
     jobTitle: "Cloud Application Developer",
     company: "Azoma.ai",
@@ -75,12 +105,21 @@ const Timeline: React.FC = () => {
               <span className="size-4 shrink-0 rounded-full bg-[#7868E5]"></span>
               <div className="-mt-2">
                 <div className="flex items-center gap-4">
-                  <img
-                    src={exp.image}
-                    className="h-6 shadow-gray-50"
-                    alt={exp.company}
-                  />
-                  <h3>{exp.company}</h3>
+                  <CompanyVisual image={exp.image} company={exp.company} />
+                  <h3>
+                    {exp.link ? (
+                      <a
+                        href={exp.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline underline-offset-4 decoration-[#fff6e8] hover:opacity-90"
+                      >
+                        {exp.company}
+                      </a>
+                    ) : (
+                      exp.company
+                    )}
+                  </h3>
                 </div>
                 <div className="text-xl my-2">{exp.jobTitle}</div>
                 <time className="font-medium text-gray-400">
